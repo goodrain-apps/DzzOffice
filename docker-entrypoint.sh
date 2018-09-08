@@ -10,9 +10,9 @@ if [ "`ls -A $CONFIG`" = "" ]; then
  mv /app/config2/* /app/config
 fi
 
-DZZ="/app/dzz/appmanagement"
+DZZ="/app/dzz"
 if [ "`ls -A $DZZ`" = "" ]; then
- mv /app/dzz/appmanagement2/* /app/dzz/appmanagement
+ mv /app/dzz2/* /app/dzz
 fi
 
 exec vendor/bin/heroku-php-apache2
